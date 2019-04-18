@@ -1,0 +1,154 @@
+body {
+  background-color: #fff;
+  font-family: "Poppins", Arial, sans-serif;
+
+  font-size: 18px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: #8c8c8c;
+}
+
+.aws-btn {
+  --slider-height-percentage: 57%;
+  --slider-transition-duration: 971ms;
+  --organic-arrow-thickness: 4px;
+  --organic-arrow-border-radius: 0px;
+  --organic-arrow-height: 40px;
+  --organic-arrow-color: #cc7c80;
+  --control-button-width: 10%;
+  --control-button-height: 25%;
+  --control-button-background: transparent;
+  --control-bullet-color: #f09297;
+  --control-bullet-active-color: #cc7c80;
+  --loader-bar-color: #851515;
+  --loader-bar-height: 6px;
+}
+
+.slider-container {
+  margin-top: 1.2em;
+}
+
+.desc p {
+  margin-bottom: 2em;
+}
+
+@media (min-width: 768px) {
+  .cust-button {
+    font-size: 40px;
+  }
+  .project-title {
+    display: inline-block;
+    font-size: 80px;
+    color: #696a71;
+    font-weight: 800;
+    position: relative;
+  }
+
+  .project-small-desc {
+    font-family: "Poppins", Arial, sans-serif;
+
+    font-size: 40px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #8c8c8c;
+  }
+
+  .desc h1 {
+    display: inline-block;
+    font-size: 60px;
+    color: #696a71;
+    font-weight: 800;
+    position: relative;
+  }
+
+  .desc p {
+    font-size: 40px;
+  }
+
+  .desc li {
+    font-size: 40px;
+  }
+
+  .desc hr {
+    display: block;
+    height: 1px;
+    width: 80%;
+    background-color: #484848;
+    position: relative;
+    border: 0;
+    margin: 0.5em 0 1em;
+  }
+
+  .list-item {
+    font-size: 6.5rem !important;
+  }
+
+  .about-project {
+    margin-top: 8em;
+  }
+
+  main {
+    padding: 8rem 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .cust-button {
+    font-size: inherit;
+  }
+
+  .about-project {
+    margin-top: 4em;
+  }
+
+  .project-title {
+    display: inline-block;
+    font-size: 38px;
+    color: #696a71;
+    font-weight: 800;
+    position: relative;
+  }
+
+  .project-small-desc {
+    font-family: "Poppins", Arial, sans-serif;
+
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #8c8c8c;
+  }
+
+  .desc h1 {
+    display: inline-block;
+    font-size: 38px;
+    color: #696a71;
+    font-weight: 800;
+    position: relative;
+  }
+
+  .desc p {
+    font-size: 18px;
+  }
+
+  .desc li {
+    font-size: 18px;
+  }
+
+  .desc hr {
+    display: block;
+    height: 1px;
+    width: 50%;
+    background-color: #484848;
+    position: relative;
+    border: 0;
+    margin: 0.5em 0 1em;
+  }
+
+  .list-item {
+    font-size: 3rem !important;
+  }
+
+  main {
+    padding: 1rem 0;
+  }
+}
