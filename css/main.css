@@ -63,6 +63,12 @@ body {
 
   .cust-button {
     font-size: 40px;
+    margin: 4rem 0;
+  }
+
+  .list-unstyled {
+    margin-top: 0 !important;
+    margin-bottom: 4rem !important;
   }
 
   .list-item {

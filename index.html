@@ -2,7 +2,7 @@
 
 <head>
   <title>Vinesh | Portfolio</title>
-
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
@@ -15,10 +15,10 @@
   <div class="overlay" id="overlay">
     <nav class="overlay-menu">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Work</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#" onclick="toggleNav()">Home</a></li>
+        <li><a href="#about" onclick="toggleNav()">About</a></li>
+        <li><a href="#work" onclick="toggleNav()">Work</a></li>
+        <li><a href="#contact" onclick="toggleNav()">Contact</a></li>
       </ul>
     </nav>
   </div>
@@ -102,7 +102,7 @@
     </div>
   </section>
 
-  <section class="about-section">
+  <section class="about-section" id="about">
     <div class="container">
       <div class="row">
         <div class="col-lg-4 col-sm-12 author-img">
@@ -187,7 +187,7 @@
     </div>
   </section>
 
-  <section class="portfolio-section">
+  <section class="portfolio-section" id="work">
     <div class="container">
       <div class="row justify-content-center mb-5 pb-5">
         <div class="col-md-12 text-center heading-section ftco-animate">
@@ -343,7 +343,7 @@
       </div>
     </div>
   </section>
-  <footer class="ftco-footer ftco-bg-dark ftco-section">
+  <footer class="ftco-footer ftco-bg-dark ftco-section" id="contact">
     <div class="container">
       <div class="row no-gutters mb-5 justify-content-center">
         <div class="col-md-12 text-center">
@@ -381,8 +381,20 @@
   <script src="js/jquery.waypoints.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/scrollax.min.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
   <script src="js/main.js"></script>
+
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]');
+
+    function toggleNav() {
+      console.log("Hello");
+      $(".button_container").toggleClass("active");
+      $(".overlay").toggleClass("open");
+    }
+  </script>
+
+
 </body>
 
 </html>
